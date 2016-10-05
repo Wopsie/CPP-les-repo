@@ -1,28 +1,6 @@
 #include "stdafx.h"
 #include <iostream>
-#include "Point.h"
-
-/*int main()
-{
-	int x = 2;
-	if (x < 10) {
-		std::cout << "x times x: " << x*x << " wow \n";
-	}
-	for (int i = 0; i < 10; i++) {
-		x += i;
-		std::cout << x << "\n";
-	}
-
-	std::cin >> x;
-	return 0;
-}
-
-char* myName() {
-	return "Silvan Herrema";
-}*/
-
-
-
+#include "Vector2.h"
 
 int myFibonacci(int p1, int p2, int rect, int sum) {
 	if (rect <= 20) {
@@ -40,13 +18,13 @@ int main()
 {
 	std::cout << "Fibonacci: "  << myFibonacci(0, 1, 0, 1);
 	std::cout << "\n\n";
-	Point p = Point(4, 3);
-	Point p2 = Point(2, 2);
-	p.PrintPoint();
-	p2.PrintPoint();
+	Vector2 p = Vector2(4, 3);
+	Vector2 p2 = Vector2(2, 2);
+	p.PrintVector2();
+	p2.PrintVector2();
 
-	Point p3 = p + p2;
-	p3.PrintPoint();
+	Vector2 p3 = p + p2;
+	p3.PrintVector2();
 	std::cout << p.Length();
 	char a;
 	std::cin >> a;
